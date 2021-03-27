@@ -32,15 +32,13 @@ ul {
     display: flex;
     /* justify-content: space-between; */
 }
-
+.logo {
+    flex: 1;
+}
 
 .intro {
     text-align:center;
     background-image: url(./images/bg-curvy-mobile.svg);
-}
-
-.logo {
-    flex: 1;
 }
 
 .nav-item {
@@ -162,7 +160,19 @@ i.fas.fa-map-marker-alt {
 @media (max-width:700px)  { 
     .menu {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    .navbar {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+    }
+    
+    .logo-img{
+        max-width: 100px;
+    }
+    .nav-item {
+        padding-left: 0.5em;
+        padding-right: 0.5em;
     }
     .card-inner{
         margin: 3em 4em 0 4em;
@@ -243,6 +253,7 @@ i.fas.fa-map-marker-alt {
 }
 
 @media (min-width:801px)  { 
+   
     .iconized {
         display: grid;
         grid-template-columns: 1fr 1fr;
