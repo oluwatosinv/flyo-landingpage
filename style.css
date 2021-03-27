@@ -228,6 +228,7 @@ i.fas.fa-map-marker-alt {
         padding-right:13em;
         margin-top: 1em;
     }
+    body, html { overflow-x:hidden; }
 }
 
 @media (min-width:801px)  { 
