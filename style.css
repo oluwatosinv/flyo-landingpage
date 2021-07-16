@@ -11,6 +11,10 @@ body {
     color: white;
     line-height: 2em;
 }
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 h1,h2,h3,h4,nav,button {
     font-family: 'Raleway', sans-serif;
@@ -60,6 +64,10 @@ ul {
 .stay-productive{
     display: grid;
     justify-items: center;
+    grid-gap: 4em;
+    align-items: center;
+    padding-top: 4em;
+    padding-bottom: 4em;
 }
 
 .card-inner{
@@ -157,6 +165,17 @@ i.fas.fa-map-marker-alt {
     font-size: 2em;
 }
 
+.floating-form{
+    display: none;
+}
+
+@media (min-width:500px) and(max-width:1200px) { 
+    .cards {
+        display: grid;
+        flex-direction: column;
+    }
+}
+
 @media (max-width:700px)  { 
     .menu {
         display: grid;
@@ -214,6 +233,10 @@ i.fas.fa-map-marker-alt {
         display: flex;
         padding-top: 2em;
     }
+    .cards {
+        display: grid;
+        flex-direction: column;
+    }
     .footer-link{
         text-decoration: none;
     }
@@ -258,7 +281,7 @@ i.fas.fa-map-marker-alt {
     body, html { overflow-x:hidden; }
 }
 
-@media (min-width:801px)  { 
+@media (min-width:1200px)  { 
    
     .iconized {
         display: grid;
@@ -269,6 +292,9 @@ i.fas.fa-map-marker-alt {
         grid-template-columns: 1fr 1fr;
         padding-left: 5em;
         grid-gap: 2em;
+        margin-bottom: 5em;
+        margin-top: 5em;
+    }
         
     }
     .stay-productive-inner{
@@ -279,26 +305,42 @@ i.fas.fa-map-marker-alt {
         grid-gap: 3em;
         padding-right: 7em;
         padding-left: 7em;
+        padding-bottom: 8em;
     }
     .footer-inner {
         display: grid;
-        grid-template-columns: 4fr 2fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     }
    .floating-form {
-    width: 700px;
-    text-align: center;
-    padding: 3em;
-    box-shadow: 0 4px 8px 0  hsl(217, 28%, 15%);
-    position: absolute;
-    top: 1280px;
-    left: 300px;
+        width: 700px;
+        text-align: center;
+        padding: 3em;
+        box-shadow: 0 4px 8px 0  hsl(217, 28%, 15%);
+        position: absolute;
+        top: 1480px;
+        left: 300px;
+        background-color: hsl(217, 28%, 15%);
     }
     .card-section{
         padding-bottom: 8em;
     }
+    img.quote {
+        padding-left: 3em;
+    }
+    footer {
+        padding-top: 12em;
+    }
     .footer-inner1 {
         display: flex;
         grid-gap: 1em;
+    }
+    .footer-icon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .icon {
+        margin-right: 12px;
     }
 
     .footer-img {
@@ -306,6 +348,5 @@ i.fas.fa-map-marker-alt {
 }
     
 
-}
-    
+
  
